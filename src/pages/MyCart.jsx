@@ -1,8 +1,14 @@
 import React from 'react'
+import Container from '../components/Container'
+import CartSection from '../components/CartSection'
+import BreadCrumb from '../components/BreadCrumb'
 
 function MyCart() {
   return (
-    <div>MyCart</div>
+    <Container>
+        <BreadCrumb currentPageTitle={"My Cart"} />
+        <CartSection/>
+    </Container>
   )
 }
 
