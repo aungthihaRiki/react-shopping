@@ -1,8 +1,10 @@
 import React from "react";
 import RatingSection from "./RatingSection";
+import { Link } from "react-router-dom";
 
 function ProductCard({
   product: {
+    id,
     title,
     price,
     image,
@@ -10,7 +12,7 @@ function ProductCard({
   },
 }) {
   return (
-    <div className="border px-4 py-2 flex flex-col justify-between items-start gap-2">
+    <Link to={`/product-detail/${id}`} className="border px-4 py-2 flex flex-col justify-between items-start gap-2">
       <div className="w-full flex justify-center">
         <img className="h-40" src={image} alt="" />
       </div>
@@ -22,7 +24,7 @@ function ProductCard({
           Add Cart
         </button>
       </div>
-    </div>
+    </Link>
   );
 }
 
