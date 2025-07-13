@@ -1,5 +1,6 @@
 import MainLayout from "../components/MainLayout";
 import AboutUs from "../pages/AboutUs";
+import ErrorPage from "../pages/ErrorPage";
 import Home from "../pages/Home";
 import MyCart from "../pages/MyCart";
 import ProductDetail from "../pages/ProductDetail";
@@ -9,6 +10,7 @@ const route = createBrowserRouter([
   {
     path: "/",
     element: <MainLayout />,
+    errorElement: <ErrorPage/>,
     children: [
       {
         path: "/",
