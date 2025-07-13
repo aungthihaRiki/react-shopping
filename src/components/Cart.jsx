@@ -11,7 +11,7 @@ const Cart = ({ cart }) => {
         />
       </div>
       <div className="col-span-3">
-        <h1 className="font-semibold text-gray-800 mb-3">
+        <h1 className="font-semibold text-md text-gray-800 mb-3">
           {cart.product.title}
         </h1>
         <p className="text-gray-400">{cart.product.price} $</p>
@@ -29,7 +29,7 @@ const Cart = ({ cart }) => {
         </div>
       </div>
       <div className="col-span-1 text-end flex flex-col justify-center">
-        <p>{cart.cost} $</p>
+        <p className="font-bold">{cart.cost} $</p>
       </div>
     </div>
   );

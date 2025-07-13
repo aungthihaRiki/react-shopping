@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const CartSection = () => {
   return (
     <>
-      <div className="flex flex-col gap-3 h-full">
+      <div className="flex flex-col gap-3 flex-grow">
         {carts.map((cart) => (
           <Cart key={cart.id} cart={cart} />
         ))}
@@ -27,7 +27,7 @@ const CartSection = () => {
             </div>
           </div>
           <div className="text-end">
-            <Link className="mx-auto border text-lg px-2 py-1 cursor-pointer hover:bg-gray-200">
+            <Link className="mx-auto border text-lg px-5 py-1 cursor-pointer hover:bg-gray-200">
               Order Now
             </Link>
           </div>
