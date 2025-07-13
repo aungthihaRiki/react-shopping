@@ -1,6 +1,7 @@
 import React from "react";
 
 function RatingSection({currentRate}) {
+  const rate = parseInt(currentRate).toFixed(0);
   const starLength = 5;
   const numbers = Array.from({ length: starLength }, (_, i) => i + 1);
   return (
@@ -13,7 +14,7 @@ function RatingSection({currentRate}) {
         viewBox="0 0 24 24"
         strokeWidth={1.5}
         stroke="currentColor"
-        className={`size-6 stroke-yellow-300 ${num <= currentRate && "fill-yellow-300"}`}
+        className={`size-6 stroke-yellow-300 ${num <= rate && "fill-yellow-300"}`}
       >
         <path
           strokeLinecap="round"
