@@ -9,7 +9,7 @@ const carts = [
   },
   {
     id: 2,
-    product: products[5],
+    product: products[4],
     quantity: 3,
     cost: 88.95,
   },

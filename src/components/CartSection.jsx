@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const CartSection = () => {
   return (
     <>
-      <div className="flex flex-col gap-3">
+      <div className="flex flex-col gap-3 h-full">
         {carts.map((cart) => (
           <Cart key={cart.id} cart={cart} />
         ))}

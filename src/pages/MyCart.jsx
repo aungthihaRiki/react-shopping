@@ -5,7 +5,7 @@ import BreadCrumb from '../components/BreadCrumb'
 
 function MyCart() {
   return (
-    <Container>
+    <Container className={"flex flex-col flex-grow"}>
         <BreadCrumb currentPageTitle={"My Cart"} />
         <CartSection/>
     </Container>
